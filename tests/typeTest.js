@@ -25,12 +25,12 @@ module.exports = {
                 typo.api.pause(2000)
                 typo.setValue('@input', shortText)
             })
-            
-        typo.waitForElementVisible('@WPM')
+        typo
+            .waitForElementVisible('@WPM')
+            .waitForElementVisible('@Accuracy')
             .getText('@WPM', function (result) {
                 console.log('Speed: ' + result.value)
             })
-        typo.waitForElementVisible('@Accuracy')
             .getText('@Accuracy', function (result) {
                 console.log('Accuracy: ' + result.value)
             })
