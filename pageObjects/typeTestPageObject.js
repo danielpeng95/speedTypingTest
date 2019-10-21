@@ -5,7 +5,7 @@ module.exports = {
         this is a more advance test to write
         this test can be buggy depending on the
         internet connection and the speed of you
-        computer, it works most of the time tho.
+        computer.
     **/
     url: 'https://www.ratatype.com/typing-test/test/',
 

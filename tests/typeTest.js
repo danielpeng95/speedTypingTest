@@ -12,7 +12,7 @@ module.exports = {
             .waitForElementVisible('@start')
             .click('@start')
             .waitForElementVisible('@current')
-            .api.pause(1000) //remember to have .api in front when working with page objects
+            .api.pause(1000)
         typo
             .getText('@current', function (word) {
                 let t = word.value
@@ -26,8 +26,6 @@ module.exports = {
                 typo.setValue('@input', shortText)
             })
             
-        // .api.pause(1000)
-
         typo.waitForElementVisible('@WPM')
             .getText('@WPM', function (result) {
                 console.log('Speed: ' + result.value)
