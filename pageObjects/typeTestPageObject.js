@@ -1,5 +1,4 @@
 module.exports = {
-
     /**
     **   this is my type Test
         this is a more advance test to write
@@ -15,9 +14,5 @@ module.exports = {
         input: '[spellcheck="false"]',
         WPM: { selector: '(//div[@class="blue"])[1]', locateStrategy: 'xpath' },
         Accuracy: { selector: '(//div[@class="blue"])[2]', locateStrategy: 'xpath' }
-    }
-
-    
+    }   
 }
-
-
